@@ -1,9 +1,10 @@
 .App {
-  text-align: center;
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   min-height: 100vh;
-  margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Column {
@@ -11,10 +12,6 @@
   flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
 }
@@ -25,9 +22,47 @@
   margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Score-tile {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 24px;
+  margin-left: auto;
 }
+
+.Score-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  padding: 4px;
+  margin: 0;
+}
+
+.Score {
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: 800;
+  font-weight: 600;
+  padding: 4px;
+  margin: 0;
+  color: hsl(229, 25%, 31%)
+}
+
+/* Colours */
+.Scissors-color {  color: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)) };
+.Paper-color {  color: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) };
+.Rock-color {  color: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) };
+.Lizard-color {  color: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%)) };
+.Spock-color { color: radial-gradient(hsl(189, 59%, 53%) to hsl(189, 58%, 57%)) };
+
+.Dark-color { color: hsl(229, 25%, 31%) }
+.Score-color { color: hsl(229, 64%, 46%) }
+.Outline-color { color: hsl(217, 16%, 45%) }
+
 
 @keyframes App-logo-spin {
   from {

@@ -6,7 +6,6 @@ interface AppHeaderProps {
 }
 
 export const AppHeader: FunctionComponent<AppHeaderProps> = ({ title}) => {
-  // split on the
   return (
     <div className="Column">
       {
